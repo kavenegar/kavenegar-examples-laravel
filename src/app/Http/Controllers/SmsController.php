@@ -15,8 +15,11 @@ class SmsController extends Controller
 
     public function index()
     { 
-        return $this->verification();
+        return $this->send();
     }
+
+
+    //https://github.com/KaveNegar/kavenegar-examples-php/blob/master/src/Send.php
     public function send()
     {  
         try{
@@ -33,7 +36,7 @@ class SmsController extends Controller
             echo $e->errorMessage();
         }
     }
-
+    //https://github.com/KaveNegar/kavenegar-examples-php/blob/master/src/SendArray.php
     public function sendarray()
     {  
         try{
@@ -51,6 +54,7 @@ class SmsController extends Controller
         }
     }
 
+    //https://github.com/KaveNegar/kavenegar-examples-php/blob/master/src/VerifyLookup.php
     public function verification()
     {  
         try{

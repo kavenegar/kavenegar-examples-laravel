@@ -1,4 +1,4 @@
 <?php 
 return [
-    'apikey' => '',
+    'apikey' => '0',
 ];
