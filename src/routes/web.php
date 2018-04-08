@@ -11,9 +11,11 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::resource('/', 'SmsController');
-
+Route::get('/sms/', 'SmsController@index');
+Route::get('/sms/send', 'SmsController@send');
+Route::get('/sms/sendarray', 'SmsController@sendarray');
+Route::get('/sms/verification', 'SmsController@verification');
